@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+:root{
+    ---White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --Dark-rose-berry: hsl(332, 51%, 32%);
+}
+
+body{
+   background: var(--Eggshell);
+   min-height: 100vh;
+   display: grid;
+   place-content: center;
+}
+
+.container{
+    max-width: 800px;
+    background: var(---White);
+    padding: 1.5rem;
+    margin: 5rem;
+    border-radius: 1rem;
+}
+
+img {
+    width: 100%;
+    padding: .1rem;
+    display: block;
+}
+
+.containe_sub{
+ padding: .7rem;
+}
+
+.containe_sub h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.containe_sub p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.nav{
+    padding: 2rem;
+    background: var(--Eggshell);
+}
+
+.nav h4{
+    color: purple;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.nav1 {
+    border-bottom: 1px solid;
+}
+
+h4{
+    color: var(--Dark-rose-berry);
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: -1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.sub_nav, .instrustion, .Nustrition{
+ padding: 2rem;
+}
+
+
+ul, ol, li{
+    padding: .5rem;
+}
+
+.nav ul li::marker{
+    color: var(--Dark-rose-berry);
+    font-size: 1.2rem;
+}
+
+.sub_nav ul li::marker{
+    color: var(--Dark-rose-berry);
+    font-size: 1.2rem;
+}
+
+.instrustion ol li::marker{
+    color: var(--Dark-rose-berry);
+    font-size: 1.2rem;
+}
+
+.Nustrition .sub_table{
+  padding: .75rem 2rem;
+  display: flex;
+  border-bottom: 1px solid var(--Light-Grey);
+}
+
+.Nustrition .sub_table:last-child{
+    border-bottom: 0;
+}
+
+.Nustrition .sub_table p:nth-child(2){
+    color: var(--Dark-rose-berry);
+    font-weight: 700;
+}
+
+.Nustrition .sub_table > *{
+     font-size: 1.2rem;
+    width: 100%;
+    margin-right: 2rem;
+}
+
+
+span{
+    color: var(--Wenge-Brown);
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 540px) {
+    h1{
+        margin-top: 2rem;
+    }
+
+
+    .container{
+       margin: 0;
+    }
+
+    img{
+        padding: 0;
+        border-radius: 0;
+    }
+   
+}
